@@ -185,16 +185,16 @@
     }; 
     infoLegend.onAdd = function (m) {
         var div = L.DomUtil.create('div', 'info infoLegend')
-        div.innerHTML = '<p><b><i>Need Score</i></b> is a linear combination of the percentages of school age children,<br> Hispanic population, African American population and residents with <br> below-poverty earning using the '+
+        div.innerHTML = '<p style="font-size:11px"><b><i>Need Score</i></b> is a linear combination of the percentages of school age children,<br> Hispanic population, African American population and residents with <br> below-poverty earning using the '+
             '<a href="https://www.census.gov/acs/www/data/data-tables-and-tools/data-profiles/2018/">American Community Survey 2018 data.</a>'+'</p>'+
-            '<p><b><i>Broadband Service Level</i></b> is based on the number of providers and speeds <br> available (applying '+
+            '<p style="font-size:11px"><b><i>Broadband Service Level</i></b> is based on the number of providers and speeds <br> available (applying '+
             '<a href="https://sjsugis.maps.arcgis.com/home/item.html?id=b35a011076bf495c8c732e477152207f">Herries (2020)</a>'+
             ' methodology) through Fixed Broadband <br>deployment '+
             '<a href="https://www.fcc.gov/general/broadband-deployment-data-fcc-form-477?contrast=highContrast">data</a>'+
            ' released by the Federal Communication Commission. </p>'+
-           '<p>For more information visit '+
+           '<p style="font-size:11px">For more information visit '+
             '<a href="https://drive.google.com/file/d/1f2j4z_f9x3G6lX9ULFil6wkEcr0SEM62/view">SJSU’s Report</a>'+
-          ' on Internet Access in CA Assembly District 30 </p>'+'<p>© copyright '+
+          ' on Internet Access in CA Assembly District 30 </p>'+'<p style="font-size:11px">© copyright '+
             '<a href="https://www.sjsu.edu/urbanplanning/research-and-public-engagement/savi.php">The SAVI Center at SJSU</a>'
             +'</p>';
         return div;
@@ -211,7 +211,7 @@
     scoreLegend.addTo(m);
     infoLegend.addTo(m);
 // Read markers data from data.csv
-$.get('files/LatLonNeedScore.csv', function(csvString) {
+$.get('files/LatLogNeedScore.csv', function(csvString) {
 // Use PapaParse to convert string to array of objects
 var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
 var circle= new Array(data.length)
@@ -224,7 +224,7 @@ L.circle([parseFloat(row.intptlat), parseFloat(row.intptlon)], {
     fillColor: '#f03',
     fillOpacity: 0,
     weight:  1 ,
-    radius: row.NeedScore*100
+    radius: row.NeedScore*120
 }).bindPopup("Need Score: "+row.NeedScore).openPopup().addTo(scores);
 };
 })
