@@ -8,14 +8,17 @@
         </style>
         <style>
             .my-label{ all: revert;color: rgb(59, 58, 58);font-size:0.001;font-weight: 1;fillColor: none;
-                        fillOpacity: 0;background-color: none;border-color: none;background: none;border: 0px;box-shadow: none;
+                          fillOpacity: 0;background-color: none;border-color: none;background: none;border: 0px;box-shadow: none;
                         margin: 0px;cursor: none;direction: 'left';interactive: false;fill: false; }
             .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+           
             .digitaldivide_legend { text-align: left; line-height: 23px; font-size: 12px;color: #555; background-color: #f0f0f4;float:left;
-            width:450px;overflow-y: auto;height: 500px;} .digitaldivide_legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 1; }
+                margin: 0; padding: 0; width:450px;overflow: auto;height: 500px;} .digitaldivide_legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 1; }
             .broadband_legend { text-align: left; line-height: 22px; font-size: 12px;color: #555; background-color: #f0f0f4; float:left;
-            width:450px;overflow-y: auto;height: 500px;} .broadband_legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 1; }</style>
-             <!-- Load jQuery and PapaParse to read data from a CSV file -->
+            width:450px;overflow: scroll;height: 500px;margin: 0;padding: 0; overflow: auto; -webkit-overflow-scrolling: touch;} .broadband_legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 1; }</style>
+           
+           
+           <!-- Load jQuery and PapaParse to read data from a CSV file -->
             <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
