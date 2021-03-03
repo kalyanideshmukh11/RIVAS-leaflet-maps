@@ -1,7 +1,9 @@
-Created By- Kalyani Deshmukh (November 2020 - February 2021)
-Guide - Dr. Ahoura Zandiatashbar
-Institute- San Jose State University
-
+### Rivas 
+Created By- Kalyani Deshmukh <br/>
+Guide - Dr. Ahoura Zandiatashbar <br/>
+Institute- San Jose State University <br/>
+Department - Urban and Regional Planning <br/>
+Duration - October 2020 - February 2021 <br/>
 
 Prerequisite for running this project :
 1. Install NodeJS 
