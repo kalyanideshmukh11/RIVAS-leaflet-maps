@@ -1,5 +1,5 @@
 
-### [Internet Access Map - CA Assembly District 30](https://www.sjsu.edu/urbanplanning/research-and-public-engagement/savi.php) <br/>
+### SJSU Website URL : [Internet Access Map - CA Assembly District 30](https://www.sjsu.edu/urbanplanning/research-and-public-engagement/savi.php) <br/>
 Created By- Kalyani Deshmukh <br/>
 Guide - Dr. Ahoura Zandiatashbar <br/>
 Institute- San Jose State University <br/>
